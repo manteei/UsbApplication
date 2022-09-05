@@ -31,9 +31,6 @@ public class ConnectionManager {
     public static Connection open() {
         try {
             return DriverManager.getConnection(
-                    "jdbc:sqlserver://D007985:57655;instance=SQLEXPRESS;encrypt=true;trustServerCertificate=true",
-                    "manteei",
-                    "Man573409"
             );
         } catch (SQLException e) {
             throw new RuntimeException(e);
